@@ -60,6 +60,7 @@ install:
 script:
   # - pytest test/test_hub.py
   - make build
+  - echo "test2"
   - |
     if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
       make push
